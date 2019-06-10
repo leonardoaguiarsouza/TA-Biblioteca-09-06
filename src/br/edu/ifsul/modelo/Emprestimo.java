@@ -56,9 +56,6 @@ public class Emprestimo implements Serializable{
     @Temporal(TemporalType.DATE)    
     @Column(name = "data_prev_devolucao")
     private Calendar dataPrevistaDevolucao;
-    @Temporal(TemporalType.DATE)    
-    @Column(name = "data_efet_devolucao")
-    private Calendar dataEfetuadaDevolucao;
 
     /**
      * @return the id
@@ -142,20 +139,6 @@ public class Emprestimo implements Serializable{
      */
     public void setDataPrevistaDevolucao(Calendar dataPrevistaDevolucao) {
         this.dataPrevistaDevolucao = dataPrevistaDevolucao;
-    }
-
-    /**
-     * @return the dataEfetuadaDevolucao
-     */
-    public Calendar getDataEfetuadaDevolucao() {
-        return dataEfetuadaDevolucao;
-    }
-
-    /**
-     * @param dataEfetuadaDevolucao the dataEfetuadaDevolucao to set
-     */
-    public void setDataEfetuadaDevolucao(Calendar dataEfetuadaDevolucao) {
-        this.dataEfetuadaDevolucao = dataEfetuadaDevolucao;
     }
 
     /**
